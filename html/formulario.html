@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/formi.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Registro - Sevilla FC</h1>
+        </div>
+    </header>
+
+    <div class="contenido">
+        <article id="formulario">
+            <form action="../index.html">
+                <fieldset>
+                    <legend id="legend">Datos Personales</legend>
+                    <label for="Nombre">Nombre:</label>
+                    <input name="Nombre" id="Nombre" type="text" placeholder="Nombre...">
+                    <label for="Apellido">Apellido:</label>
+                    <input name="Apellido" id="Apellido" type="text" placeholder="Apellido...">
+                    <label for="DNI">DNI:</label>
+                    <input name="DNI" id="DNI" type="text" maxlength="9" placeholder="DNI...">
+                    <label for="Nacimiento">Nacimiento:</label>
+                    <input name="Nacimiento" id="Nacimiento" type="date">
+                    <label for="Email">Email:</label>
+                    <input name="Email" id="Email" type="text" placeholder="email@example.com">
+                    <label for="Direccion">Dirección:</label>
+                    <input name="Direccion" id="Direccion" type="text" placeholder="Calle...">
+                    <label for="genero">Género:</label>
+                    <select name="genero" id="genero">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                </fieldset>
+                <div id="errores" class="error-mensaje"></div>
+                <input type="submit" name="ENVIAR" value="ENVIAR">
+                <input name="RESTABLECER" type="reset" value="RESTABLECER">
+            </form>
+        </article>
+    </div>
+
+    <div class="back-to-home">
+        <a href="../index.html">Volver al Inicio</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sevilla FC. Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/sevillafc" target="_blank">Facebook</a>
+            <a href="https://twitter.com/SevillaFC" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/sevillafc" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/user/SevillaFC" target="_blank">YouTube</a>
+        </div>
+    </footer>
+</body>
+</html>
+

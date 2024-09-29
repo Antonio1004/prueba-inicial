@@ -1,0 +1,133 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #D41F1F; /* Mismo color rojo del Sevilla FC */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Sección del palmarés */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.impar, .par {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.impar {
+    background-color: #f9f9f9; /* Fondo más claro para los elementos impares */
+}
+
+.par {
+    background-color: #efefef; /* Fondo ligeramente más oscuro para los elementos pares */
+}
+
+.impar:hover, .par:hover {
+    background-color: #ddd; /* Efecto hover */
+}
+
+h3 {
+    color: #D41F1F;
+    margin: 0;
+    flex: 1;
+    text-align: left;
+}
+
+img {
+    max-width: 200px; /* Tamaño máximo de las imágenes */
+    height: auto;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    .impar, .par {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    img {
+        margin-left: 0;
+        margin-top: 10px;
+        max-width: 100%; /* Imágenes ocupan todo el ancho en pantallas pequeñas */
+    }
+}
+/* Botón de volver al inicio */
+.back-to-home {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-to-home a {
+    text-decoration: none;
+    background-color: #D41F1F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-to-home a:hover {
+    background-color: #a91414; /* Color ligeramente más oscuro al pasar el cursor */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #D41F1F; /* Mismo color rojo del header */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-media a:hover {
+    background-color: white;
+    color: #D41F1F;
+}
+
